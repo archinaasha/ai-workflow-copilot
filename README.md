@@ -2,11 +2,8 @@
 
 AI Workflow Copilot is a lightweight workflow assistant that converts unstructured text such as emails, meeting notes, and documents into structured workflow outputs.  
 The application extracts actionable tasks, assigns priorities, detects deadlines, and generates suggested workflow steps.
-
 The system is designed to help individuals and teams quickly transform raw communication into organized work plans.
-
 ---
-
 ## Overview
 
 Many workplace tasks are communicated through emails, messages, or meeting notes. These communications often contain important action items that can be difficult to track manually.
@@ -42,10 +39,7 @@ Workflow generation
 Creates suggested workflow steps for each task.
 
 Document support  
-Accepts multiple input formats:
-- TXT
-- PDF
-- DOCX
+Accepts multiple input formats: TXT, PDF, DOCX
 
 Task categorization  
 Automatically classifies tasks such as:
@@ -59,9 +53,7 @@ Filtering and search
 Users can filter tasks by category or priority and search through results.
 
 Export options  
-Workflow results can be downloaded as:
-- JSON
-- CSV
+Workflow results can be downloaded as: JSON, CSV
 
 ---
 
@@ -73,65 +65,34 @@ Input (email or meeting notes)
 The project consists of two main components.
 
 1. Extraction Engine
-
-The workflow_extractor.py module performs text processing and task detection.
-
 Responsibilities:
-
 detect action items
-
 parse natural language dates
-
 identify urgency keywords
-
 classify tasks
-
 generate workflow steps
 
 2. User Interface
-
 The app.py module provides a Streamlit web interface that allows users to:
-
 paste text or upload documents
-
 view structured tasks
-
 filter results
+download workflow data
 
-download workflow data 
 Dependencies
-
 The project uses the following Python libraries:
-
-streamlit
-
-pandas
-
-dateparser
-
-pypdf
-
-python-docx
+streamlit, pandas, dateparser, pypdf, python-docx
 
 Limitations
-
 This version uses rule-based NLP techniques instead of a large language model.
 Some complex or ambiguous inputs may require manual interpretation.
 
 Future versions may integrate transformer-based models for improved task understanding.
-
 Future Improvements
-
 Potential improvements for future releases include:
-
 task status tracking
-
 calendar integration
-
 email integration
-
 improved entity detection
-
 machine learning based task extraction
-
 collaborative workflow management
