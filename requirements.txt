@@ -1,0 +1,5 @@
+streamlit
+pandas
+dateparser
+pypdf
+python-docx
